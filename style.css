@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+
+
+html, body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
+  grid-template-areas: 
+  "header header"
+  "sec1 sec3"
+  "main main"
+  "footer footer";
+}
+
+.header{
+  grid-area: header;
+  /*border: 1px solid red;*/
+  z-index: 10;
+}
+
+.main{
+  grid-area: main;
+  /*border: 1px solid red;*/
+  color: whitesmoke;
+}
+
+.sec1{
+  grid-area: sec1;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.sec3{
+  grid-area: sec3;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.video {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.footer{
+  grid-area: footer;
+  z-index: 13;
+  /*border: 1px solid red;*/
+}
+
+/* ESTILOS */
+
+
+#header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0; /*tirar o auto depois*/
+  padding: 0;
+  
+}
+
+#header h1 {
+  margin: 0;
+  font: bold;
+  font-size: 60px;
+  color: whitesmoke;
+  font-family: 'Bungee Shade', cursive;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .logo {
+  width: 120px;
+   
+}
+
+.footer {
+  font-family: 'Zilla Slab Highlight', cursive;
+  color: #000000;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 760px){
+  main{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 0.3fr 0.2fr;
+  grid-template-areas: 
+  "header"
+  "sec1"
+  "sec3"
+  "main"
+  "footer";
+}
+
+  #header h1 {
+  font: bold;
+  font-size: 20px;
+}
+
+#header .logo {
+  width: 50px;
+}
+
+  .footer{
+    font-size: 20px;
+  }
+
+  .sec1{
+    width: 100%;
+    margin: 0;
+  }
+
+}

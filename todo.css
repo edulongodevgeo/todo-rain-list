@@ -1,17 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
-.sec1{
-  z-index: 9;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  /*background: rgba(255, 255, 255, 0.150);
-  backdrop-filter: blur(0.3px);*/
-  overflow: auto;
-  width: 100%;
-}
-
 
 form {
   height: 100px;
@@ -65,12 +52,5 @@ form {
   text-decoration: line-through;
 }
 
-small {
-  color: #ffffff;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 900;
-  font-family: 'Roboto Mono', monospace;
-}
+
 
